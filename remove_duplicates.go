@@ -46,14 +46,3 @@ func removeDuplicates(inputFile, outputFile string) error {
 	fmt.Printf("Successfully removed duplicates. Output saved to %s\n", outputFile)
 	return nil
 }
-
-func main() {
-	// Define input and output file names
-	inputFile := "input.txt"
-	outputFile := "output.txt"
-
-	// Run the duplicate removal function
-	if err := removeDuplicates(inputFile, outputFile); err != nil {
-		fmt.Println("Error:", err)
-	}
-}
